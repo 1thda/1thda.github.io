@@ -10,13 +10,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg: #fafaf9; --surface: #ffffff; --text: #1c1917; --muted: #57534e;
-  --line: #e7e5e4; --accent: #0e7c86; --accent-soft: #e6f4f5;
+  /* washi paper, sumi ink, Hokusai indigo, vermilion */
+  --bg: #f4efe6; --surface: #fbf8f2; --text: #231f1c; --muted: #6b635a;
+  --line: #e0d8ca; --accent: #1f3d63; --accent-soft: #e4e9f0; --shu: #b8321f;
+  --wave: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='20'%3E%3Ccircle cx='0' cy='-10' r='20' fill='%23f4efe6'/%3E%3Ccircle cx='0' cy='-10' r='18' fill='none' stroke='%232b4a73' stroke-width='1.2'/%3E%3Ccircle cx='0' cy='-10' r='14' fill='none' stroke='%232b4a73' stroke-width='1.2'/%3E%3Ccircle cx='0' cy='-10' r='10' fill='none' stroke='%232b4a73' stroke-width='1.2'/%3E%3Ccircle cx='0' cy='-10' r='6' fill='none' stroke='%232b4a73' stroke-width='1.2'/%3E%3Ccircle cx='40' cy='-10' r='20' fill='%23f4efe6'/%3E%3Ccircle cx='40' cy='-10' r='18' fill='none' stroke='%232b4a73' stroke-width='1.2'/%3E%3Ccircle cx='40' cy='-10' r='14' fill='none' stroke='%232b4a73' stroke-width='1.2'/%3E%3Ccircle cx='40' cy='-10' r='10' fill='none' stroke='%232b4a73' stroke-width='1.2'/%3E%3Ccircle cx='40' cy='-10' r='6' fill='none' stroke='%232b4a73' stroke-width='1.2'/%3E%3Ccircle cx='20' cy='0' r='20' fill='%23f4efe6'/%3E%3Ccircle cx='20' cy='0' r='18' fill='none' stroke='%232b4a73' stroke-width='1.2'/%3E%3Ccircle cx='20' cy='0' r='14' fill='none' stroke='%232b4a73' stroke-width='1.2'/%3E%3Ccircle cx='20' cy='0' r='10' fill='none' stroke='%232b4a73' stroke-width='1.2'/%3E%3Ccircle cx='20' cy='0' r='6' fill='none' stroke='%232b4a73' stroke-width='1.2'/%3E%3Ccircle cx='0' cy='10' r='20' fill='%23f4efe6'/%3E%3Ccircle cx='0' cy='10' r='18' fill='none' stroke='%232b4a73' stroke-width='1.2'/%3E%3Ccircle cx='0' cy='10' r='14' fill='none' stroke='%232b4a73' stroke-width='1.2'/%3E%3Ccircle cx='0' cy='10' r='10' fill='none' stroke='%232b4a73' stroke-width='1.2'/%3E%3Ccircle cx='0' cy='10' r='6' fill='none' stroke='%232b4a73' stroke-width='1.2'/%3E%3Ccircle cx='40' cy='10' r='20' fill='%23f4efe6'/%3E%3Ccircle cx='40' cy='10' r='18' fill='none' stroke='%232b4a73' stroke-width='1.2'/%3E%3Ccircle cx='40' cy='10' r='14' fill='none' stroke='%232b4a73' stroke-width='1.2'/%3E%3Ccircle cx='40' cy='10' r='10' fill='none' stroke='%232b4a73' stroke-width='1.2'/%3E%3Ccircle cx='40' cy='10' r='6' fill='none' stroke='%232b4a73' stroke-width='1.2'/%3E%3Ccircle cx='20' cy='20' r='20' fill='%23f4efe6'/%3E%3Ccircle cx='20' cy='20' r='18' fill='none' stroke='%232b4a73' stroke-width='1.2'/%3E%3Ccircle cx='20' cy='20' r='14' fill='none' stroke='%232b4a73' stroke-width='1.2'/%3E%3Ccircle cx='20' cy='20' r='10' fill='none' stroke='%232b4a73' stroke-width='1.2'/%3E%3Ccircle cx='20' cy='20' r='6' fill='none' stroke='%232b4a73' stroke-width='1.2'/%3E%3Ccircle cx='0' cy='30' r='20' fill='%23f4efe6'/%3E%3Ccircle cx='0' cy='30' r='18' fill='none' stroke='%232b4a73' stroke-width='1.2'/%3E%3Ccircle cx='0' cy='30' r='14' fill='none' stroke='%232b4a73' stroke-width='1.2'/%3E%3Ccircle cx='0' cy='30' r='10' fill='none' stroke='%232b4a73' stroke-width='1.2'/%3E%3Ccircle cx='0' cy='30' r='6' fill='none' stroke='%232b4a73' stroke-width='1.2'/%3E%3Ccircle cx='40' cy='30' r='20' fill='%23f4efe6'/%3E%3Ccircle cx='40' cy='30' r='18' fill='none' stroke='%232b4a73' stroke-width='1.2'/%3E%3Ccircle cx='40' cy='30' r='14' fill='none' stroke='%232b4a73' stroke-width='1.2'/%3E%3Ccircle cx='40' cy='30' r='10' fill='none' stroke='%232b4a73' stroke-width='1.2'/%3E%3Ccircle cx='40' cy='30' r='6' fill='none' stroke='%232b4a73' stroke-width='1.2'/%3E%3C/svg%3E");
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #0c0f12; --surface: #13181d; --text: #e7ecef; --muted: #93a1ab;
-    --line: #232b33; --accent: #16f8ed; --accent-soft: #0f2a2c;
+    --bg: #11151b; --surface: #171c24; --text: #ebe5d8; --muted: #9a9384;
+    --line: #272e3a; --accent: #8fb0d9; --accent-soft: #1c2636; --shu: #e0654e;
+    --wave: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='20'%3E%3Ccircle cx='0' cy='-10' r='20' fill='%2311151b'/%3E%3Ccircle cx='0' cy='-10' r='18' fill='none' stroke='%234d6d99' stroke-width='1.2'/%3E%3Ccircle cx='0' cy='-10' r='14' fill='none' stroke='%234d6d99' stroke-width='1.2'/%3E%3Ccircle cx='0' cy='-10' r='10' fill='none' stroke='%234d6d99' stroke-width='1.2'/%3E%3Ccircle cx='0' cy='-10' r='6' fill='none' stroke='%234d6d99' stroke-width='1.2'/%3E%3Ccircle cx='40' cy='-10' r='20' fill='%2311151b'/%3E%3Ccircle cx='40' cy='-10' r='18' fill='none' stroke='%234d6d99' stroke-width='1.2'/%3E%3Ccircle cx='40' cy='-10' r='14' fill='none' stroke='%234d6d99' stroke-width='1.2'/%3E%3Ccircle cx='40' cy='-10' r='10' fill='none' stroke='%234d6d99' stroke-width='1.2'/%3E%3Ccircle cx='40' cy='-10' r='6' fill='none' stroke='%234d6d99' stroke-width='1.2'/%3E%3Ccircle cx='20' cy='0' r='20' fill='%2311151b'/%3E%3Ccircle cx='20' cy='0' r='18' fill='none' stroke='%234d6d99' stroke-width='1.2'/%3E%3Ccircle cx='20' cy='0' r='14' fill='none' stroke='%234d6d99' stroke-width='1.2'/%3E%3Ccircle cx='20' cy='0' r='10' fill='none' stroke='%234d6d99' stroke-width='1.2'/%3E%3Ccircle cx='20' cy='0' r='6' fill='none' stroke='%234d6d99' stroke-width='1.2'/%3E%3Ccircle cx='0' cy='10' r='20' fill='%2311151b'/%3E%3Ccircle cx='0' cy='10' r='18' fill='none' stroke='%234d6d99' stroke-width='1.2'/%3E%3Ccircle cx='0' cy='10' r='14' fill='none' stroke='%234d6d99' stroke-width='1.2'/%3E%3Ccircle cx='0' cy='10' r='10' fill='none' stroke='%234d6d99' stroke-width='1.2'/%3E%3Ccircle cx='0' cy='10' r='6' fill='none' stroke='%234d6d99' stroke-width='1.2'/%3E%3Ccircle cx='40' cy='10' r='20' fill='%2311151b'/%3E%3Ccircle cx='40' cy='10' r='18' fill='none' stroke='%234d6d99' stroke-width='1.2'/%3E%3Ccircle cx='40' cy='10' r='14' fill='none' stroke='%234d6d99' stroke-width='1.2'/%3E%3Ccircle cx='40' cy='10' r='10' fill='none' stroke='%234d6d99' stroke-width='1.2'/%3E%3Ccircle cx='40' cy='10' r='6' fill='none' stroke='%234d6d99' stroke-width='1.2'/%3E%3Ccircle cx='20' cy='20' r='20' fill='%2311151b'/%3E%3Ccircle cx='20' cy='20' r='18' fill='none' stroke='%234d6d99' stroke-width='1.2'/%3E%3Ccircle cx='20' cy='20' r='14' fill='none' stroke='%234d6d99' stroke-width='1.2'/%3E%3Ccircle cx='20' cy='20' r='10' fill='none' stroke='%234d6d99' stroke-width='1.2'/%3E%3Ccircle cx='20' cy='20' r='6' fill='none' stroke='%234d6d99' stroke-width='1.2'/%3E%3Ccircle cx='0' cy='30' r='20' fill='%2311151b'/%3E%3Ccircle cx='0' cy='30' r='18' fill='none' stroke='%234d6d99' stroke-width='1.2'/%3E%3Ccircle cx='0' cy='30' r='14' fill='none' stroke='%234d6d99' stroke-width='1.2'/%3E%3Ccircle cx='0' cy='30' r='10' fill='none' stroke='%234d6d99' stroke-width='1.2'/%3E%3Ccircle cx='0' cy='30' r='6' fill='none' stroke='%234d6d99' stroke-width='1.2'/%3E%3Ccircle cx='40' cy='30' r='20' fill='%2311151b'/%3E%3Ccircle cx='40' cy='30' r='18' fill='none' stroke='%234d6d99' stroke-width='1.2'/%3E%3Ccircle cx='40' cy='30' r='14' fill='none' stroke='%234d6d99' stroke-width='1.2'/%3E%3Ccircle cx='40' cy='30' r='10' fill='none' stroke='%234d6d99' stroke-width='1.2'/%3E%3Ccircle cx='40' cy='30' r='6' fill='none' stroke='%234d6d99' stroke-width='1.2'/%3E%3C/svg%3E");
   }
 }
 * { box-sizing: border-box; margin: 0; }
@@ -37,7 +40,7 @@ nav .links a { color: var(--muted); }
 nav .links a:hover { color: var(--text); text-decoration: none; }
 
 header { padding: 88px 0 64px; }
-header .hi { color: var(--accent); font-size: 14px; margin-bottom: 12px; }
+header .hi { color: var(--shu); font-size: 14px; margin-bottom: 12px; }
 h1 { font-size: clamp(36px, 7vw, 56px); line-height: 1.1; letter-spacing: -0.02em; }
 header p { color: var(--muted); font-size: 18px; max-width: 580px; margin: 20px 0 28px; }
 .buttons { display: flex; flex-wrap: wrap; gap: 10px; }
@@ -47,6 +50,10 @@ header p { color: var(--muted); font-size: 18px; max-width: 580px; margin: 20px 
 }
 .btn:hover { border-color: var(--accent); text-decoration: none; }
 .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+.btn.primary:hover { background: var(--shu); border-color: var(--shu); color: #fff; }
+
+/* seigaiha wave divider */
+.wave { height: 40px; background: var(--wave); background-size: 40px 20px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 
 section { padding: 48px 0; border-top: 1px solid var(--line); }
 h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); margin-bottom: 24px; }
@@ -73,6 +80,8 @@ h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; color: 
 .edu span { color: var(--muted); font-size: 14px; }
 
 footer { padding: 32px 0 48px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+footer blockquote { font-style: italic; margin-bottom: 16px; max-width: 520px; }
+footer cite { font-style: normal; font-size: 13px; }
 
 @media (max-width: 560px) {
   nav .links { gap: 14px; }
@@ -108,8 +117,13 @@ footer { padding: 32px 0 48px; border-top: 1px solid var(--line); color: var(--m
       <a class="btn" href="resume.pdf">Resume</a>
     </div>
   </header>
+</main>
 
-  <section class="now">
+<div class="wave" aria-hidden="true"></div>
+
+<main class="wrap">
+
+  <section class="now" style="border-top: 0">
     <h2>Now</h2>
     <ul>
       <li>Studying a Master of Information Systems at the University of Melbourne</li>
@@ -168,7 +182,10 @@ footer { padding: 32px 0 48px; border-top: 1px solid var(--line); color: var(--m
 </main>
 
 <footer>
-  <div class="wrap">© 2026 Thane Dassanayake</div>
+  <div class="wrap">
+    <blockquote>“Lean on reason and you grind against people. Give way to feeling and you are swept along.”<br><cite>Natsume Sōseki, <i>Kusamakura</i> (1906)</cite></blockquote>
+    © 2026 Thane Dassanayake
+  </div>
 </footer>
 
 </body>
